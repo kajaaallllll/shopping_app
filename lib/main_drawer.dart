@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'contact_details.dart';
-import 'homescreen.dart';
-import 'about_us.dart';
+
+import 'package:shopping_app/main.dart';
+
 class MainDrawer extends StatelessWidget {
   const MainDrawer({Key? key}) : super(key: key);
 
@@ -13,7 +13,7 @@ class MainDrawer extends StatelessWidget {
             Container(
               width: double.infinity,
               padding: EdgeInsets.all(20),
-              color: Colors.purple,
+              color: Colors.grey,
               child: Center(
                 child: Column(
                   children: [
@@ -38,36 +38,50 @@ class MainDrawer extends StatelessWidget {
 
 
             ListTile(
-              leading: Icon(Icons.list),
+              leading: Icon(Icons.message_outlined),
+              title: Text('FAQs',
+                style: TextStyle(
+                    fontSize: 20,
+
+                    color: Colors.black87
+                ),),
+              onTap:(){  },
+            ),
+            ListTile(
+              leading: Icon(Icons.book_rounded),
+              title: Text('About Us',
+                style: TextStyle(
+                    fontSize: 20,
+
+                    color: Colors.black87
+                ),),
+              onTap:(){  },
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle),
               title: Text('Contact Us',
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
 
                     color: Colors.black87
                 ),),
-              onTap:(){  Navigator.of(context).pop();
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Contact()));},
+
             ),
             ListTile(
-              leading: Icon(Icons.list),
-              title: Text('Settings',
+              leading: Icon(Icons.dashboard),
+              title: Text('Terms and Conditions',
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
 
                     color: Colors.black87
                 ),),
-              onTap:(){  Navigator.of(context).pop();
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => About()));},
+
             ),
             ListTile(
-              leading: Icon(Icons.list),
+              leading: Icon(Icons.logout),
               title: Text('Log Out',
                 style: TextStyle(
-                    fontSize: 30,
+                    fontSize: 20,
 
                     color: Colors.black87
                 ),),

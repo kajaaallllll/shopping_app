@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/homescreen.dart';
+import 'package:shopping_app/main.dart';
 class ProductScreen3 extends StatefulWidget {
 
   @override
@@ -12,7 +12,7 @@ class _ProductScreenState3 extends State<ProductScreen3> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.lightBlue.shade200,
       body: Column(
         children: [
           AppBar(
@@ -21,7 +21,7 @@ class _ProductScreenState3 extends State<ProductScreen3> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios,color: Colors.white,size: 30,),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>Page1()));
               },
             ),
             actions: [
@@ -37,18 +37,13 @@ class _ProductScreenState3 extends State<ProductScreen3> {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
-              Text('Color : Space Black '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Brand:Oppo '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text(' 8GB RAM,128GB Storage'
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text(' Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 256GB | Dual SIM (nano+nano) dual-standby (4G+4G).| Color OS 11.1 based on Android v11.0 operating system.'
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('33 W Charger Included '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
-              Text('Company : OPPO'
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
+
 
 
             ],

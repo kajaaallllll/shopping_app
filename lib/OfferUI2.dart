@@ -34,9 +34,10 @@ class OfferUI2 extends StatelessWidget {
                   children: [
                     Image.asset('images/jeans image.jpeg',width: 130,
                     ),
-                    Text('Denim Jeans ',style: TextStyle(fontSize: 20,color: Colors.black),),
                     SizedBox(height: 10,),
-                    Text('Rs 1000',style: TextStyle(fontSize: 20,color: Colors.black),
+                    Text('Denim Jeans ',style: TextStyle(fontSize: 15,color: Colors.black),),
+
+                    Text('Rs 1000',style: TextStyle(fontSize: 15,color: Colors.black),
                     ),
 
 

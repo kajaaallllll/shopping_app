@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/homescreen.dart';
+import 'package:shopping_app/main.dart';
 class ProductScreen extends StatefulWidget {
 
   @override
@@ -10,7 +10,7 @@ class _ProductScreenState extends State<ProductScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.lightBlue.shade200,
       body: Column(
         children: [
           AppBar(
@@ -19,7 +19,7 @@ class _ProductScreenState extends State<ProductScreen> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios,color: Colors.white,size: 30,),
                 onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
                 },
             ),
             actions: [
@@ -36,17 +36,17 @@ mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
               Text('Color : Golden Brown '
-                  ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+                  ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
 
               Text('Brand  : Titan '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
               Text('Cost : Rs. 750 '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Leather Strap Analog Watch '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Case style: Analogue watch, has a circular case with a fixed bezel,nbsp;a stainless steel back '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
 
             ],

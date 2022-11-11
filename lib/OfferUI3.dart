@@ -34,9 +34,10 @@ class OfferUI3 extends StatelessWidget {
                   children: [
                     Image.asset('images/neckband image.jpeg',width: 130,
                     ),
-                    Text('Neckband ',style: TextStyle(fontSize: 20,color: Colors.black),),
                     SizedBox(height: 10,),
-                    Text('Rs 1700',style: TextStyle(fontSize: 20,color: Colors.black),
+                    Text('One Plus Neckband ',style: TextStyle(fontSize: 15,color: Colors.black),),
+
+                    Text('Rs 1700',style: TextStyle(fontSize: 15,color: Colors.black),
                     ),
 
 

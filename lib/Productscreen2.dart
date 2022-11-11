@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/homescreen.dart';
+import 'package:shopping_app/main.dart';
 class ProductScreen2 extends StatefulWidget {
 
   @override
@@ -12,7 +12,7 @@ class _ProductScreenState2 extends State<ProductScreen2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.lightBlue.shade200,
       body: Column(
         children: [
           AppBar(
@@ -21,7 +21,7 @@ class _ProductScreenState2 extends State<ProductScreen2> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios,color: Colors.white,size: 30,),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
               },
             ),
             actions: [
@@ -37,18 +37,16 @@ class _ProductScreenState2 extends State<ProductScreen2> {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
-              Text('Color : Baby Pink '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Closure: Lace-Up '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Material : Leather  '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Shoe Width: Medium '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Origin : India '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('THE BRAND: Sparx is all about passion, challenges and zeal of people who like to live on-the-edge, have a dare-devil spirit and do things differently. '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Brand  : Bata '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
+
 
 
             ],

@@ -34,9 +34,10 @@ class OfferUI extends StatelessWidget {
                     children: [
                       Image.asset('images/mobile image.jpeg',width: 130,
                       ),
-                      Text('Mobile',style: TextStyle(fontSize: 20,color: Colors.black),),
-                      SizedBox(height: 10,),
-                      Text('Rs 17000',style: TextStyle(fontSize: 20,color: Colors.black),
+                      SizedBox(height: 40,),
+                      Text('OPPO F19',style: TextStyle(fontSize: 15,color: Colors.black),),
+
+                      Text('Rs 17000',style: TextStyle(fontSize: 15,color: Colors.black),
                       ),
 
 

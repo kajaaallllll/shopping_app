@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/homescreen.dart';
+import 'package:shopping_app/main.dart';
 class ProductScreen4 extends StatefulWidget {
 
   @override
@@ -12,7 +12,7 @@ class _ProductScreenState4 extends State<ProductScreen4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.lightBlue.shade200,
       body: Column(
         children: [
           AppBar(
@@ -21,7 +21,7 @@ class _ProductScreenState4 extends State<ProductScreen4> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios,color: Colors.white,size: 30,),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
               },
             ),
             actions: [
@@ -37,18 +37,13 @@ class _ProductScreenState4 extends State<ProductScreen4> {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
-              Text('Girls Slim Fit Jeans '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Blue light wash jeans, mildly distressed, light fade, and has a zip fly closure '
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Joggers'
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Blue light wash jeans, mildly distressed, light fade, and has a zip fly closures'
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Set Of 3 '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
-              Text('Material Type: Coton '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
+
 
 
             ],

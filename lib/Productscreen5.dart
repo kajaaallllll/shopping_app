@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_app/homescreen.dart';
+import 'package:shopping_app/main.dart';
 class ProductScreen5 extends StatefulWidget {
 
   @override
@@ -12,7 +12,7 @@ class _ProductScreenState5 extends State<ProductScreen5> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      backgroundColor: Colors.lightBlue.shade200,
       body: Column(
         children: [
           AppBar(
@@ -21,7 +21,7 @@ class _ProductScreenState5 extends State<ProductScreen5> {
             leading: IconButton(
               icon: Icon(Icons.arrow_back_ios,color: Colors.white,size: 30,),
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Page1()));
               },
             ),
             actions: [
@@ -37,18 +37,10 @@ class _ProductScreenState5 extends State<ProductScreen5> {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
-              Text('OnePlus Bullets Z2'
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
+              Text('Oneplus Bullets Z2 Bluetooth Wireless in Ear Earphones with Mic, Bombastic Bass - 12.4 Mm Drivers, 10 Mins Charge - 20 Hrs Music, 30 Hrs Battery Life (Acoustic Red)'
+                ,style: TextStyle(fontSize: 30,fontStyle: FontStyle.italic),
               ),
-              Text('Bluetooth Wireless '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
-              Text('in Earphones with Mic'
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
-              Text('Color : Acoustic Red '
-                ,style: TextStyle(fontSize: 40,fontStyle: FontStyle.italic),
-              ),
+
 
 
             ],
